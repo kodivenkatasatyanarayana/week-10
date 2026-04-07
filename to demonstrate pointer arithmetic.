@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+int main() {
+int arr[] = {10, 20, 30, 40, 50,60};
+int *ptr = arr;
+int i;
+printf("25331A05D9\n");
+printf("Pointer arithmetic on array:\n");
+for (i = 0; i < 6; i++) {
+printf("ptr+%d = %p, Value = %d\n", i, (ptr + i), *(ptr + i));
+}
+return 0;
+}
