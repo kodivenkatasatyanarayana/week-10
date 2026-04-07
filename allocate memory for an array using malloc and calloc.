@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() {
+int n, i;
+int *arrM, *arrC;
+printf("25331A05D9\n");
+printf("Enter size: ");
+scanf("%d", &n);
+arrM = (int*)malloc(n * sizeof(int));
+arrC = (int*)calloc(n, sizeof(int));
+printf("malloc values (garbage): ");
+for (i = 0; i < n; i++) printf("%d ", arrM[i]);
+printf("\ncalloc values (zero): ");
+for (i = 0; i < n; i++) printf("%d ", arrC[i]);
+printf("\n");
+free(arrM);
+free(arrC);
+return 0;
+}
