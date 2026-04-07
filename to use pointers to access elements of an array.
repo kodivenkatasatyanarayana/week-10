@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+int main() {
+int arr[6], i;
+int *ptr = arr;
+printf("25331A05D9\n");
+printf("Enter 6 elements: ");
+for (i = 0; i < 6; i++)
+scanf("%d", ptr + i);
+printf("Elements via pointer:\n");
+for (i = 0; i < 6; i++)
+printf("arr[%d] = %d\n", i, *(ptr + i));
+return 0;
+}
